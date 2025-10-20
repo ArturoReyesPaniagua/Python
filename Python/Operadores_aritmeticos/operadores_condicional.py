@@ -53,3 +53,4 @@ print (f"El resultado de comparar true y false con aor es: {resultado}")
 
 resultado = not exp1 
 print (f"El resultado de aplicar not en False es: {resultado}")
+
