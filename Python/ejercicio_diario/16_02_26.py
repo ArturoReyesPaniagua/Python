@@ -36,8 +36,12 @@ Menu, pulse la opcion que requiera
 
             case 3:
                 retiro = int(input("Cuanto dinero desea retirar: "))
-                cuenta_obj.retirar(retiro)
-                cuenta_obj.consultar()
+                dinero_en_cuenta = cuenta_obj.consulta()
+                if dinero_en_cuenta > retiro:
+                    cuenta_obj.retirar(retiro)
+                    cuenta_obj.consultar()
+                else: 
+                    print("el saldo no es suficiente para el retiro")
 
             case 4:
                 print("Saliendo del sistema...")
