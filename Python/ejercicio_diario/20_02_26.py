@@ -1,6 +1,6 @@
 def limpiar_texto(cadena):
-    cadena = cadena.lower()
-    nueva = ""
+    cadena = cadena.lower()  #hace minusculas todas las palabras
+    nueva = ""  #Crea 
 
     for caracter in cadena:
         if caracter.isalnum():  
